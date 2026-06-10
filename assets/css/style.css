@@ -1,7 +1,40 @@
-/* Force a sans-serif font across the entire site */
+/* Reset all margins/padding */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
+  /* Force sans-serif font across entire website */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
                Helvetica, Arial, sans-serif !important;
   background: #fdf6e3; /* Warm cream */
   color: #333333; /* Grey-black */
+  padding: 2rem; /* Comfortable margins */
+  line-height: 1.6; /* Improve readability with slightly more space */
 }
+
+/* Add consistent extra spacing to top-level elements */
+main > * { margin-bottom: 1.25rem; }
+
+/* Centre content */
+main { padding-top: 1rem; max-width: 800px; margin: 0 auto; }
+
+ /* Format header size and padding */
+h1 { font-size: 2rem; margin-top: 2rem; }
+h2 { font-size: 1.6rem; margin-top: 1.75rem; }
+h3 { font-size: 1.3rem; margin-top: 1.5rem; }
+h4, h5, h6 { font-size: 1.2rem; margin-top: 1.2rem; }
+h1, h2, h3, h4, h5, h6 { 
+  margin-bottom: 0.5rem; /* avoid double-spacing */
+  font-weight: 600; /* clarify hierarchy */
+} 
+
+/* Soften card/image/box corners */
+img, pre, code, blockquote { border-radius: 6px; }
+
+/* Style links */
+a { 
+  color: #005f87; 
+  text-decoration: none;
+  transition: text-decoration-color 0.2s ease; 
+}
+a:hover { text-decoration: underline; }
+
