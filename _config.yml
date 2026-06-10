@@ -1,0 +1,4 @@
+title: "The ReprCheck Project"
+description: "Open science infrastructure for workflow reproducibility."
+theme: jekyll-theme-cayman
+markdown: kramdown
