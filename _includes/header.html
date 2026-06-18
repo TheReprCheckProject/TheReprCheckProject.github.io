@@ -1,9 +1,54 @@
 <header>
-  <nav>
-    <a href="/">Home</a> |
-    <a href="/docs">Docs</a> |
-    <a href="/news">News</a> |
-    <a href="/learn">Learn</a>
+  <nav class="navbar">
+    <a href="/" class="nav-item">Home</a>
+
+    <!-- Documentation Drop-down -->
+    <div class="dropdown">
+      <a href="/docs" class="nav-item dropbtn">Docs ▾</a>
+      <div class="dropdown-content">
+
+        <!-- Human-oriented -->
+        <a href="/docs/getting-started">Getting Started</a>
+        <a href="/docs/user-guide">User Guide</a>
+        <a href="/docs/developer-guide">Developer Guide</a>
+        
+        <div class="dropdown"> <!-- API Reference documentation -->
+          <a href="/docs/api-reference" class="nav-item dropbtn">API Reference ▾</a>
+          <div class="dropdown-content">
+            <a href="/docs/api-reference/reprcheck-action">ReprCheck-Action</a>
+            <a href="/docs/api-reference/reprcheck">ReprCheck</a>
+            <a href="/docs/api-reference/reprscan">ReprScan</a>
+            <a href="/docs/api-reference/bioreposcan">BioRepoScan</a>
+          </div>
+        </div>
+        
+        <hr class="dropdown-divider">
+        
+        <!-- Core Documentation -->
+        <a href="/docs/design-decisions">Design Decisions</a>
+        <a href="/docs/specification">Specification</a>
+        <a href="/docs/extensions">Extensions</a>
+        <a href="/docs/governance">Governance</a>
+
+        <hr class="dropdown-divider">
+        
+        <!-- Institutional -->
+        <a href="/docs/report-schema">Report Schema</a>
+        <a href="/docs/weighting-profiles">Weighting Profiles</a>
+        <a href="/docs/institutional-integration">Institutional Integration</a>
+
+        <hr class="dropdown-divider">
+        
+        <!-- General -->
+        <a href="/docs/roadmap">Roadmap</a>
+        <a href="/docs/faq">FAQ</a>
+        <a href="/docs/glossary">Glossary</a>
+        
+      </div>
+    </div>
+
+    <a href="/news" class="nav-item">News</a>
+    <a href="/learn" class="nav-item">Learn</a>
   </nav>
   <hr>
 </header>
